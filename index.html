@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>reCAPTCHA導入サンプル</title>
+    <!-- 1. GoogleのAPIスクリプトを読み込む -->
+    <script src="https://google.com" async defer></script>
+</head>
+<body>
+
+    <form action="submit.php" method="POST">
+        <p>名前：<input type="text" name="name" required></p>
+        
+        <!-- 2. reCAPTCHAを表示するウィジェット（サイトキーを入力） -->
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        
+        <br>
+        <button type="submit">送信する</button>
+    </form>
+
+</body>
+</html>
